@@ -7,10 +7,23 @@ body {
 }
 
 section {
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
-h3 {
+.title {
+    max-width: 714px;
+    margin: auto;
+}
+
+.title h3 {
+    color: #414040;
+}
+
+.title p {
+    color: #707070;
+}
+
+h3, .card-title {
     font-family: "EB Garamond", serif;
     font-weight: 800;
 }
@@ -54,4 +67,68 @@ h3 {
 
 .hero-content .btn-deer:hover {
     color: #fff;
+}
+
+/* ===== Practice ===== */
+.practice .pt-box {
+    border-color: #e7e7e7;
+}
+
+.practice .hot {
+    background: linear-gradient(180deg, #f3f3f3 0%, rgba(243, 243, 243, 0) 100%);
+}
+
+.practice .card-text {
+    color: #707070;
+}
+
+.practice a {
+    color: rgba(182, 140, 90, 1);
+}
+
+.practice a i {
+    transition: transform 0.3s;
+}
+
+.practice a:hover i {
+    transform: scale(1.2);
+}
+
+/* ===== Media Query ===== */
+@media screen and (min-width: 992px) {
+    /* ===== Practice ===== */
+    .practice .pt-box:first-child {
+        border-top: transparent !important;
+        border-left: transparent !important;
+    }
+
+    .practice .pt-box:nth-child(3) {
+        border-right: transparent !important;
+        border-left: transparent !important;
+    }
+
+    .practice .pt-box:nth-child(4) {
+        border-bottom: transparent !important;
+    }
+
+    .practice .pt-box:nth-child(5) {
+        border-bottom: transparent !important;
+        border-left: transparent !important;
+    }
+
+    .practice .pt-box:last-child {
+        border-right: transparent !important;
+        border-bottom: transparent !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* ===== Practice ===== */
+    .practice .pt-box:nth-child(2) {
+        border-top: 1px solid #e7e7e7 !important;
+    }
+
+    .practice .pt-box:nth-of-type(even) {
+        border-left: transparent !important;
+    }
 }
