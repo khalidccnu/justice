@@ -23,7 +23,7 @@ section {
     color: #707070;
 }
 
-h3, .card-title {
+h3, .card-title, .tm-title {
     font-family: "EB Garamond", serif;
     font-weight: 800;
 }
@@ -92,6 +92,34 @@ h3, .card-title {
 
 .practice a:hover i {
     transform: scale(1.2);
+}
+
+/* ===== Testimonial ===== */
+.testimonial .carousel-block-1 {
+    background: url("../img/bg-tm-1.jpg") no-repeat center top / cover;
+    height: 500px;
+}
+
+.testimonial .carousel-block-2 {
+    background: url("../img/bg-tm-2.jpg") no-repeat center top / cover;
+    height: 500px;
+}
+
+.testimonial .carousel-block-3 {
+    background: url("../img/bg-tm-3.jpg") no-repeat center top / cover;
+    height: 500px;
+}
+
+.tm-overlay {
+    background-color: rgba(17, 17, 17, 0.8);
+    transform: rotate(-180deg);
+}
+
+.tm-photo {
+    width: 70px;
+    height: 70px;
+    background-color: #e3e3e4;
+    border-radius: 50%;
 }
 
 /* ===== Media Query ===== */
