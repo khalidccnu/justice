@@ -1,0 +1,25 @@
+/* ===== Font ===== */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap");
+
+/* ===== Common ===== */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-deer {
+    color: #fff;
+    background-color: rgba(182, 140, 90, 1);
+    padding: 18px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    transition: all 0.3s;
+}
+
+.btn-deer:hover {
+    color: #595959;
+    background-color: transparent;
+    border-color: rgba(182, 140, 90, 1);
+}
