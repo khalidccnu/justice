@@ -6,6 +6,15 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+section {
+    margin-top: 50px;
+}
+
+h3 {
+    font-family: "EB Garamond", serif;
+    font-weight: 800;
+}
+
 .btn-deer {
     color: #fff;
     background-color: rgba(182, 140, 90, 1);
@@ -22,4 +31,27 @@ body {
     color: #595959;
     background-color: transparent;
     border-color: rgba(182, 140, 90, 1);
+}
+
+/* ===== Hero ===== */
+.hero {
+    background: url("../img/bg-hero.png") no-repeat center top / cover;
+    min-height: calc(100vh - 150px);
+}
+
+.hero-overlay {
+    background: linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0) 100%);
+    transform: rotate(-180deg);
+}
+
+.hero-content {
+    max-width: 668px;
+}
+
+.hero-content p {
+    color: #e7e7e7;
+}
+
+.hero-content .btn-deer:hover {
+    color: #fff;
 }
