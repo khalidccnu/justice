@@ -94,6 +94,16 @@ h3, .card-title, .tm-title, .cm-accordion-header, .ct-box-title, .ft-title {
     transform: scale(1.2);
 }
 
+/* ===== Package ===== */
+.package .card {
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+.package .card:hover {
+    transform: translateY(-5px);
+}
+
 /* ===== Testimonial ===== */
 .testimonial .carousel-block-1 {
     background: url("../img/bg-tm-1.jpg") no-repeat center top / cover;
