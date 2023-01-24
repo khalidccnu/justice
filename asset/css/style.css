@@ -133,8 +133,8 @@ h3, .card-title, .tm-title, .cm-accordion-header, .ct-box-title, .ft-title {
 }
 
 /* ===== FAQ ===== */
-.cm-accordion-button:not(.collapsed), .cm-accordion-body {
-    background-color: #f3f3f3;
+.cm-accordion-button, .cm-accordion-body {
+    background-color: #f3f3f3 !important;
 }
 
 .cm-accordion-button:not(.collapsed) {
