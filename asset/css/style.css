@@ -23,7 +23,7 @@ section {
     color: #707070;
 }
 
-h3, .card-title, .tm-title, .cm-accordion-header, .ct-box-title {
+h3, .card-title, .tm-title, .cm-accordion-header, .ct-box-title, .ft-title {
     font-family: "EB Garamond", serif;
     font-weight: 800;
 }
@@ -163,6 +163,17 @@ h3, .card-title, .tm-title, .cm-accordion-header, .ct-box-title {
     resize: none;
 }
 
+/* ===== Footer ===== */
+.ft-list a:hover {
+    color: rgba(182, 140, 90, 1) !important;
+}
+
+.ft-list .btn-deer {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 0.375rem;
+}
+
 /* ===== Media Query ===== */
 @media screen and (min-width: 992px) {
     /* ===== Practice ===== */
@@ -188,6 +199,11 @@ h3, .card-title, .tm-title, .cm-accordion-header, .ct-box-title {
     .practice .pt-box:last-child {
         border-right: transparent !important;
         border-bottom: transparent !important;
+    }
+
+    /* ===== Footer ===== */
+    .ft-list {
+        margin-top: 51px !important;
     }
 }
 
