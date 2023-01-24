@@ -31,7 +31,7 @@ h3, .card-title, .tm-title, .cm-accordion-header, .ct-box-title, .ft-title {
 .btn-deer {
     color: #fff;
     background-color: rgba(182, 140, 90, 1);
-    padding: 18px;
+    padding: 0.5rem 1rem;
     border: 2px solid transparent;
     border-radius: 8px;
     font-weight: 600;
@@ -142,12 +142,12 @@ h3, .card-title, .tm-title, .cm-accordion-header, .ct-box-title, .ft-title {
     box-shadow: none;
 }
 
-.cm-accordion-button:not(.collapsed)::after {
-    background-image: url("../img/accordion-minus-sign.svg");
-}
-
 .cm-accordion-button::after {
     background-image: url("../img/accordion-plus-sign.svg");
+}
+
+.cm-accordion-button:not(.collapsed)::after {
+    background-image: url("../img/accordion-minus-sign.svg");
 }
 
 .cm-accordion-body {
@@ -222,7 +222,7 @@ h3, .card-title, .tm-title, .cm-accordion-header, .ct-box-title, .ft-title {
 
     /* ===== Footer ===== */
     .ft-list {
-        margin-top: 51px !important;
+        margin-top: 2.75rem !important;
     }
 }
 
@@ -235,6 +235,12 @@ h3, .card-title, .tm-title, .cm-accordion-header, .ct-box-title, .ft-title {
     .practice .pt-box:nth-of-type(even) {
         border-left: transparent !important;
     }
+
+    /* ===== Contact ===== */
+    .ct-full-box {
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -242,6 +248,16 @@ h3, .card-title, .tm-title, .cm-accordion-header, .ct-box-title, .ft-title {
     .ct-box {
         border-width: 1px;
         border-style: solid;
+    }
+
+    .contact .ct-box:first-child {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+
+    .contact .ct-box:last-child {
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
     }
 
     .contact .ct-box:nth-of-type(even), .contact .ct-box:nth-child(3) {
