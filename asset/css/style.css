@@ -23,7 +23,7 @@ section {
     color: #707070;
 }
 
-h3, .card-title, .tm-title, .cm-accordion-header {
+h3, .card-title, .tm-title, .cm-accordion-header, .ct-box-title {
     font-family: "EB Garamond", serif;
     font-weight: 800;
 }
@@ -144,6 +144,25 @@ h3, .card-title, .tm-title, .cm-accordion-header {
     color: #707070;
 }
 
+/* ===== Contact ===== */
+.ct-box {
+    padding: 60px;
+    border-color: #cfcfcf;
+    background-color: #f3f3f3;
+}
+
+.ct-box .bx {
+    color: rgba(182, 140, 90, 1);
+}
+
+.contact .form-control {
+    background-color: #f3f3f3;
+}
+
+.contact textarea {
+    resize: none;
+}
+
 /* ===== Media Query ===== */
 @media screen and (min-width: 992px) {
     /* ===== Practice ===== */
@@ -180,5 +199,17 @@ h3, .card-title, .tm-title, .cm-accordion-header {
 
     .practice .pt-box:nth-of-type(even) {
         border-left: transparent !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* ===== Contact ===== */
+    .ct-box {
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .contact .ct-box:nth-of-type(even), .contact .ct-box:nth-child(3) {
+        border-top-width: 0;
     }
 }
